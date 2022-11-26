@@ -1,4 +1,4 @@
-<h1>Variaveis Global</h1>
+<h1>Variavel Global</h1>
 
 Variáveis ​​globais podem ser usadas por todos, tanto dentro de funções quanto fora:
 
