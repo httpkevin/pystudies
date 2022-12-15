@@ -25,4 +25,10 @@ myfunc()
 print(x + "Kevin")
 ~~~
 
+<h1>Funções em Python</h1>
+Basicamente uma função é um bloco de código que só é excutado quando chamado. 
+
+Em Python, uma função é definida usando a palavra-chave: def
+
+[comment]: <> (https://www.w3schools.com/python/python_functions.asp)
 
