@@ -25,6 +25,23 @@ myfunc()
 print(x + "Kevin")
 ~~~
 
+<h1>Condições e Instruções if</h1>
+
+~~~python
+a = int(input()) #entrada de dados (numero)
+b = int(input()) #entrada de dados (numero)
+
+#primeira condição
+if a > b:
+    print ("o primeiro valor é maior que o segundo")
+#segunda condição (meio termo)  
+elif a == b:
+    print ("o primeiro valor é igual o segundo")
+#terceira condição
+else:
+    print ("o segundo valor é maior que o primeiro")
+~~~
+
 <h1>Funções em Python</h1>
 Basicamente uma função é um bloco de código que só é excutado quando chamado. 
 
