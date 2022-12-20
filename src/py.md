@@ -47,5 +47,30 @@ Basicamente uma função é um bloco de código que só é excutado quando chama
 
 Em Python, uma função é definida usando a palavra-chave: def
 
+As informações podem ser passadas para funções como argumentos.
+
+Os argumentos são especificados após o nome da função, dentro dos parênteses. Podemos adicionar quantos argumentos quiser, basta separá-los com uma vírgula.
+
+~~~python
+def entrada_dados(edados):
+  print("nomes:" + edados)
+
+entrada_dados("Kevin")
+entrada_dados("Vick")
+entrada_dados("Tico")
+~~~
+
+~~~python 
+def entrada_dados(dados1, dados2, dados3): #entrada_dados(função) dados1(argumentos)
+  print("dados:" + dados2)
+
+entrada_dados(dados1 = "Vick", dados2 = "Kevin", dados3 = "Tico")
+~~~
+
+<h1>Passando uma lista como um argumento</h1>
+
+
+
+
 [comment]: <> (https://www.w3schools.com/python/python_functions.asp)
 
