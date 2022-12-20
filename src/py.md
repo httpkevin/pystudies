@@ -69,8 +69,33 @@ entrada_dados(dados1 = "Vick", dados2 = "Kevin", dados3 = "Tico")
 
 <h1>Passando uma lista como um argumento</h1>
 
+ podemos enviar qualquer tipos de dados de argumento para uma função (string, número, lista, dicionário etc.) e eles serão tratados como o mesmo tipo de dados dentro da função.
 
+ ~~~python
+def function(food):
+    for x in food:
+        print(x)
+        
+food = ["Apple", "Banana", "Grape"]
 
+function(food)
+ ~~~
 
+ <h1>Recursão</h1>
+Python também aceita recursão de função, o que significa que uma função definida pode chamar a si mesma.
+O desenvolvedor deve ter muito cuidado com a recursão, pois pode ser muito fácil escrever uma função que nunca termina ou uma que usa quantidades excessivas de memória ou poder do processador.
+
+~~~python
+def tri_recursion(k): #tri_recursion() é uma função que definimos para chamar a si mesma ("recursão")
+  if(k > 0): #variável k como dados, que decrementa (-1) toda vez que recursamos.
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+~~~
 [comment]: <> (https://www.w3schools.com/python/python_functions.asp)
 
