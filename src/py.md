@@ -99,6 +99,75 @@ tri_recursion(6)
 ~~~
 
 <h1>Python Lambda</h1>
+Podemos considerar que a função lambda é uma função anonima. Uma função lambda pode receber qualquer número de argumentos, mas pode ter apenas uma expressão.
 
-[comment]: <> (https://www.w3schools.com/python/python_lambda.asp)
+~~~python
+lambda arguments : expression 
+~~~
+
+Exempo:
+~~~python 
+x = lambda a: a + 10 
+print(x(5))
+~~~
+
+As funções do Lambda podem receber qualquer número de argumentos. 
+Multiplique o argumento "a" pelo argumento "b" e retorne o resultado:
+
+~~~python 
+x = lambda a, b : a * b
+print(x(5, 6))
+~~~
+
+Resuma os argumentos "a", "b" e "c" retorna o resultado:
+
+~~~python 
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+~~~
+
+O poder de lambda é melhor mostrado quando você os usa como uma função anônima dentro de outra função. 
+Use a mesma definição de função para fazer uma função que sempre triplica o número que você envia:
+
+~~~python
+def funcao(n):
+  return lambda a : a * n 
+
+dobro = funcao(2)
+triplo  = funcao(3)
+
+print(dobro(2))
+print(triplo(2))
+~~~
+
+<h1>Python Arrays</h1>
+Um Array (matriz) é uma variável especial, que pode conter mais de um valor por vez.
+
+~~~python
+cars = ["Ford", "Volvo", "BMW"]
+
+cars.append("Honda")
+
+print(cars)
+~~~
+
+| Métodos | Descrição |
+| --- | --- |
+| append() | Adiciona um elemento no final da lista |
+| clear() | Remove todos os elementos da lista |
+| copy() | Retorna uma cópia da lista |
+| count() | Retorna o número de elementos com o valor especificado |
+| extend() | Adicionar os elementos de uma lista (ou qualquer iterável) ao final da lista atual |
+| index() | Retorna o índice do primeiro elemento com o valor especificado |
+| insert() | Adiciona um elemento na posição especificada |
+| pop() | Remove o elemento na posição especificada |
+| remove() | Remove o primeiro item com o valor especificado |
+| reverse() | Inverte a ordem da lista |
+| sort() | Classifica a lista |
+
+
+
+
+
+
 
