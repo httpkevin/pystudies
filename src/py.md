@@ -97,5 +97,8 @@ def tri_recursion(k): #tri_recursion() é uma função que definimos para chamar
 print("\n\nRecursion Example Results")
 tri_recursion(6)
 ~~~
-[comment]: <> (https://www.w3schools.com/python/python_functions.asp)
+
+<h1>Python Lambda</h1>
+
+[comment]: <> (https://www.w3schools.com/python/python_lambda.asp)
 
