@@ -166,7 +166,6 @@ print(cars)
 | sort() | Classifica a lista |
 
 <h1>Python Classes/Objetos</h1>
-
 Uma grande parte em Python é relacionado a objetos, com suas propriedades e métodos. Podemos dizer que uma classe é como um construtor de objetos.
 
 ~~~python
@@ -234,6 +233,10 @@ p1 = Person("Kevin", 27)
 
 print(p1)
 ~~~
+
+teste
+
+
 
 
 
