@@ -165,6 +165,10 @@ print(cars)
 | reverse() | Inverte a ordem da lista |
 | sort() | Classifica a lista |
 
+<h1>Python Classes/Objetos</h1>
+
+
+
 
 
 
