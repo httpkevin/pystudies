@@ -167,6 +167,79 @@ print(cars)
 
 <h1>Python Classes/Objetos</h1>
 
+Uma grande parte em Python é relacionado a objetos, com suas propriedades e métodos. Podemos dizer que uma classe é como um construtor de objetos.
+
+~~~python
+class myClass:
+  x = 10 
+
+print(x)
+~~~
+
+Um exemplo simples para demostrar objetos, construi uma classe na qual cria objetos:
+
+~~~python
+class myClass:
+  x = 10 
+
+p1 = myClass()
+print(p1.x)
+~~~
+
+<h1>The __init__() Function</h1>
+Os exemplos acima são classes e objetos em sua forma mais simples e não são realmente úteis em aplicações da vida real.
+Todas as classes possuem uma função chamada __init__(), que sempre é executada quando a classe está sendo iniciada. Use a função __init__() para atribuir valores às propriedades do objeto ou outras operações que são necessárias quando o objeto está sendo criado:
+
+
+~~~python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age 
+
+p1 = Person("Kevin", 27)
+
+print(p1.name)
+print(p1.age)
+~~~
+
+<h1>The __str__() Function</h1>
+A função __str__() controla o que deve ser retornado quando o objeto de classe é representado como uma string. Se a função __str__() não for definida, a representação de string do objeto é retornada:
+
+A representação de string de um objeto SEM a função __str__():
+
+~~~python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age 
+
+p1 = Person("Kevin", 27)
+
+print(p1)
+~~~
+
+A representação de string de um objeto COM a função __str__():
+
+~~~python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age 
+    
+  def __str__(self):
+    return f"{self.name}({self.age})"
+
+p1 = Person("Kevin", 27)
+
+print(p1)
+~~~
+
+
+
+
+
+
 
 
 
