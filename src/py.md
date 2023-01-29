@@ -234,7 +234,45 @@ p1 = Person("Kevin", 27)
 print(p1)
 ~~~
 
-teste
+<h1>Métodos de objetos</h1>
+
+Os Objetos também podem conter métodos. Métodos em objetos são funções que pertencem ao objeto.
+
+Inserindo uma função que imprima uma saudação e execute-a no objeto p1.
+
+Exemplo:
+~~~python 
+class Person:
+  def __init__(self, name, age):
+    self.name = name 
+    self.age = age 
+    
+  def myfunc(self):
+    print("Olá,  meu nome é " + self.name)
+  
+p1 = Person("Kevin", 27)
+p1.myfunc()
+~~~
+
+<h1>O parametro Self</h1>
+O parâmetro self é uma referência à instância atual da classe e é usado para acessar variáveis ​​pertencentes à classe.
+
+Ele não precisa ser chamado de self, podemos chamá-lo como quiser, porém deve ser o primeiro parâmetro de qualquer função da classe:
+
+~~~python
+class Person:
+  def __init__(test, name, age): #utilizando "test" no lugar do self
+    test.name = name 
+    test.age = age 
+    
+  def myfunc(abc):
+    print("Olá,  meu nome é " + abc.name)
+  
+p1 = Person("Kevin", 27)
+p1.myfunc()
+~~~
+
+
 
 
 
