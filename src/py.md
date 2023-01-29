@@ -234,6 +234,7 @@ p1 = Person("Kevin", 27)
 print(p1)
 ~~~
 
+<<<<<<< HEAD
 <h1>Métodos de objetos</h1>
 
 Os Objetos também podem conter métodos. Métodos em objetos são funções que pertencem ao objeto.
@@ -273,6 +274,11 @@ p1.myfunc()
 ~~~
 
 
+=======
+<h1>Métodos de Objetos</h1>
+
+testando
+>>>>>>> 96ef1905ca0141c28dce37031d0fd78a744e13ad
 
 
 
