@@ -234,11 +234,10 @@ p1 = Person("Kevin", 27)
 print(p1)
 ~~~
 
-<<<<<<< HEAD
+
 <h1>Métodos de objetos</h1>
 
 Os Objetos também podem conter métodos. Métodos em objetos são funções que pertencem ao objeto.
-
 Inserindo uma função que imprima uma saudação e execute-a no objeto p1.
 
 Exemplo:
@@ -251,7 +250,7 @@ class Person:
   def myfunc(self):
     print("Olá,  meu nome é " + self.name)
   
-p1 = Person("Kevin", 27)
+p1 = Person("Kevin", 00)
 p1.myfunc()
 ~~~
 
@@ -269,16 +268,11 @@ class Person:
   def myfunc(abc):
     print("Olá,  meu nome é " + abc.name)
   
-p1 = Person("Kevin", 27)
+p1 = Person("Kevin", 00)
 p1.myfunc()
 ~~~
 
 
-=======
-<h1>Métodos de Objetos</h1>
-
-testando
->>>>>>> 96ef1905ca0141c28dce37031d0fd78a744e13ad
 
 
 
