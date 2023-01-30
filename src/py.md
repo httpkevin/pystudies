@@ -254,7 +254,7 @@ p1 = Person("Kevin", 00)
 p1.myfunc()
 ~~~
 
-<h1>O parametro Self</h1>
+<h1>Parametro Self</h1>
 O parâmetro self é uma referência à instância atual da classe e é usado para acessar variáveis ​​pertencentes à classe.
 
 Ele não precisa ser chamado de self, podemos chamá-lo como quiser, porém deve ser o primeiro parâmetro de qualquer função da classe:
@@ -272,16 +272,152 @@ p1 = Person("Kevin", 00)
 p1.myfunc()
 ~~~
 
+<h1>Python JSON</h1>
 
+Em Python tem um pacote embutido chamado json, já que JSON normalmente é escrito em JS e com isso podemos usar para trabalhar com dados JSON.
 
+Importando modulo JSON: 
+~~~python 
+import json
+~~~
 
+<h1>Convertendo de PY para JSON</h1>
+Se tiver um objeto Python, poderá convertê-lo em uma string JSON usando o método json.dumps().
 
+~~~python
+import json 
 
+# um objeto em py:
+x = {
+  "nome": "Kevin",
+  "Idade": 27,
+  "Cidade": "Nova York"
+}
 
+# convertendo em JSON:
+y = json.dumps(x)
 
+# o resultado 
+print(y)
+~~~
 
+Podemos converter objetos Python dos seguintes tipos em strings JSON: 
 
+- dict 
+- list 
+- tuple
+- string 
+- int 
+- float 
+- True 
+- False 
+- None 
 
+~~~python
+import json 
+
+print(json.dumps({"nome": "Kevin", "idade": 30}))
+print(json.dumps(["maca", "banana"]))
+print(json.dumps(("maca", "banana")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))
+~~~
+
+Um exemplo legal também, é convertendo um objeto python contendo todos os tipos de dados legais:
+
+~~~python 
+import json 
+
+x = {
+  "nome": "Kevin",
+  "idade": 27,
+  "casado": False,
+  "divorciado": False,
+  "pets": ("POPO", "Tico", "Sofis"),
+  "filhos": None,
+  "cars": [
+    {"modelo1": "bmw 230"},
+    {"modelo2": "camaro"}
+  ] 
+}
+
+print(json.dumps(x))
+~~~
+
+<h1>Formatando o Resultado</h1>
+
+O exemplo acima imprime uma string JSON, mas não é muito fácil de ler, sem recuos e quebras de linha. 
+
+O "json.dumps() o método possui parâmetros para facilitar a leitura do resultado.
+
+Usando o "indent" parâmetro para definir o número de recuos:
+
+~~~python
+json.dumps(indent=4)
+~~~
+
+Podemos também definir os separadores, o valor padrão é (", ", ": "), o que significa usar uma vírgula e um espaço para separar cada objeto, e dois pontos e um espaço para separar as chaves dos valores:
+
+~~~python 
+json.dumps(x, indent=4, separators=(". ", " = "))
+~~~
+
+<h1>Ordenando o resultado</h1>
+O método json.dumps() possui parâmetros para ordenar as chaves no resultado:
+
+Exemplo:
+Usando o parâmetro "sort_keys" para especificar se o resultado deve ser classificado ou não:
+
+~~~python
+json.dumps(x, indent=4, sort_keys=True)
+~~~
+
+Resultado final:
+
+~~~python
+import json 
+
+x = {
+  "nome": "Kevin",
+  "idade": 27,
+  "casado": False,
+  "divorciado": False,
+  "pets": ("POPO", "Tico", "Sofis"),
+  "filhos": None,
+  "cars": [
+    {"modelo1": "bmw 230"},
+    {"modelo2": "camaro"}
+  ] 
+}
+
+print(json.dumps(x, indent=4, sort_keys=True, separators=(". ", " = ")))
+
+#resultado do print
+{
+    "cars" = [
+        {
+            "modelo1" = "bmw 230"
+        }. 
+        {
+            "modelo2" = "camaro"
+        }
+    ]. 
+    "casado" = false. 
+    "divorciado" = false. 
+    "filhos" = null. 
+    "idade" = 27. 
+    "nome" = "Kevin". 
+    "pets" = [
+        "POPO". 
+        "Tico". 
+        "Sofis"
+    ]
+}
+~~~
 
 
 
